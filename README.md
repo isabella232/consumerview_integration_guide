@@ -1,4 +1,4 @@
-#Aperture Data Studio Consumer View Integration
+# Aperture Data Studio Consumer View Integration
 Written By Ashley Laing
 ## Overview
 
