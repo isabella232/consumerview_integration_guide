@@ -1,10 +1,10 @@
 # Aperture Data Studio Consumer View Integration
 Written By Ashley Laing
+
 ## Overview
 
 Experian Data Quality is now introducing enrichment into Aperture Data Studio.
 Experian Marketing Services and EDQ have combined to integrate Consumer View Data into Aperture Data Studio.
-
 
 ## Installation prerequisites
 Before starting, it's important to make sure you have access to the following
@@ -85,3 +85,15 @@ If the Record Completion feature was purchased, you also have the ability to hav
 
 ### Step 6
 Once you have finished configuring your workflow, you can click on "Show data" to see the results.
+
+## Troubleshooting
+
+## FAQs
+
+1. What columns to tag?
+
+The more columns you tag the better the result will be. However, at least you these Data Tags: Forename, Surname, Zip Code/Postal Code, and Country.
+
+2. Why do I only get data back for US records?
+
+This Integration only works for USA data.
