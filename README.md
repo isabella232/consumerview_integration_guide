@@ -4,7 +4,7 @@ Written By Ashley Laing
 ## Overview
 
 Experian Data Quality is now introducing enrichment into Aperture Data Studio.
-Experian Marketing Services and EDQ have combined to integrate Consumer View Data into Aperture Data Studio.
+Experian Marketing Services and EDQ have collaborated to integrate Consumer View Data into Aperture Data Studio.
 
 ## Installation prerequisites
 Before starting, it's important to make sure you have access to the following
@@ -19,7 +19,7 @@ things:
 For the purposes of this tutorial we will assume you have already installed and logged into Aperture Data Studio.
 
 ### Step 1
-You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.3.0\addons (the folder Aperture Data Studio 1.3.0 should end in the version of Aperture Data Studio you are using).
+You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.3.0\addons (the folder name Aperture Data Studio 1.3.0 should end in the version of Aperture Data Studio you are using).
 
 ### Step 2
 Restart the service by clicking on the user name in the top-right corner and select "Restart service."
@@ -40,7 +40,7 @@ Create a new Constant Library and give it a name (ie ConsumerView).
 
 ![Aperture - Constant Library](media/cv-constantLib.PNG)
 
-Create 3 Business Constant.
+Create a Business Constant.
 
 ![Aperture - Business Constant](media/cv-businessConstant.PNG)
 
@@ -86,13 +86,11 @@ If the Record Completion feature was purchased, you also have the ability to hav
 ### Step 6
 Once you have finished configuring your workflow, you can click on "Show data" to see the results.
 
-## Troubleshooting
-
 ## FAQs
 
 1. What columns to tag?
 
-The more columns you tag the better the result will be. However, at least you these Data Tags: Forename, Surname, Zip Code/Postal Code, and Country.
+The more columns you tag the better the result will be. However, you must you at least these Data Tags: Forename, Surname, Zip Code/Postal Code, and Country.
 
 2. Why do I only get data back for US records?
 
