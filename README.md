@@ -86,6 +86,12 @@ If the Record Completion feature was purchased, you also have the ability to hav
 ### Step 6
 Once you have finished configuring your workflow, you can click on "Show data" to see the results.
 
+## Troubleshooting
+
+1. Leading Zero Missing
+
+Data Studio will sometimes remove leading zeros for standardization. It is important to avoid this on the zip code/postal code column, as the API relies on a full zip code to make a match. To maintain leading zeros, go to Data Explorer and right click on the file. In the drop down menu, select "Preview and configure". Right click on the zip code/postal code column and select "Edit." In the pop up window, turn off all standardization options for that column by toggling each switch into the "Off" position.
+
 ## FAQs
 
 1. What columns to tag?
