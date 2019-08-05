@@ -19,7 +19,7 @@ things:
 For the purposes of this tutorial we will assume you have already installed and logged into Aperture Data Studio.
 
 ### Step 1
-You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.3.0\addons (the folder name Aperture Data Studio 1.3.0 should end in the version of Aperture Data Studio you are using).
+You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.5.1\addons (the folder name Aperture Data Studio 1.5.1 should end in the version of Aperture Data Studio you are using).
 
 ### Step 2
 Restart the service by clicking on the user name in the top-right corner and select "Restart service."
@@ -69,21 +69,20 @@ After data tagging the table, create your workflow in the Workflow Designer.
 Select your table and put together your workflow to meet your needs.
 The Consumer View step is called "Custom - Consumer View", it will be in the sidebar to the left.
 
-![Aperture - Selecting Table](media/screen3.PNG)
-
-![Aperture - Setting Workflow](media/screen5.PNG)
+![Aperture - Selecting Table](media/cv_table.PNG)
 
 ### Step 4
-For the Consumer View Step, you will see 8 predefined Bundles; you will only be able to use the purchased bundles. Select as many purchased bundles as you may.
+For the Consumer View Step, you will see a checkbox that will control if the reponses get translated or stays in their orginal coded response.
 
-![Aperture - Setting Workflow](media/cv-bundles.PNG)
+![Aperture - Setting Workflow](media/cv_noTranslation.PNG)
+![Aperture - Setting Workflow](media/cv_humanResponses.PNG)
 
-### Step 5
 If the Record Completion feature was purchased, you also have the ability to have two completion options: Name Completion and Address Completion.
 
-![Aperture - Setting Workflow](media/cv-completion.PNG)
+![Aperture - Setting Workflow](media/cv_translation.PNG)
+![Aperture - Setting Workflow](media/cv_codeResponses.PNG)
 
-### Step 6
+### Step 5
 Once you have finished configuring your workflow, you can click on "Show data" to see the results.
 
 ## Troubleshooting
@@ -96,8 +95,24 @@ Data Studio will sometimes remove leading zeros for standardization. It is impor
 
 1. What columns to tag?
 
-The more columns you tag the better the result will be. However, you must you at least these Data Tags: Forename, Surname, Zip Code/Postal Code, and Country.
+I would recommend using the following data tags:
+    You must use:
+        -Name for full name (if name is separated, use Forenames and Surname)
+        -Postal Code or Zip Code
+    In addition you can use:
+        -Email if the column is there (not required though)
+        -Address or Premise and Street
+        -City
+        -State
 
 2. Why do I only get data back for US records?
 
 This Integration only works for USA data.
+
+3. How does ConsumerView Add-on know it is a US record?
+
+The ConsumerView Step uses the Zip code and checks to see if it is a US formatted zipcode.
+
+4. Will the records process if I don't have the data tags?
+
+The records 
