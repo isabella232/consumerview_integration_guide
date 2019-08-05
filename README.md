@@ -74,10 +74,12 @@ The Consumer View step is called "Custom - Consumer View", it will be in the sid
 ### Step 4
 For the Consumer View Step, you will see a checkbox that will control if the reponses get translated or stays in their orginal coded response.
 
+Leave the box unchecked and it will leave the responses in the orginal form.
+
 ![Aperture - Setting Workflow](media/cv_noTranslation.PNG)
 ![Aperture - Setting Workflow](media/cv_codeResponses.PNG)
 
-If the Record Completion feature was purchased, you also have the ability to have two completion options: Name Completion and Address Completion.
+Check the box and the responses will be translated to values that make it clear of the meaning.
 
 ![Aperture - Setting Workflow](media/cv_translation.PNG)
 ![Aperture - Setting Workflow](media/cv_humanResponses.PNG)
@@ -114,5 +116,3 @@ This Integration only works for USA data.
 The ConsumerView Step uses the Zip code and checks to see if it is a US formatted zipcode.
 
 4. Will the records process if I don't have the data tags?
-
-The records 
