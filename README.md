@@ -75,12 +75,12 @@ The Consumer View step is called "Custom - Consumer View", it will be in the sid
 For the Consumer View Step, you will see a checkbox that will control if the reponses get translated or stays in their orginal coded response.
 
 ![Aperture - Setting Workflow](media/cv_noTranslation.PNG)
-![Aperture - Setting Workflow](media/cv_humanResponses.PNG)
+![Aperture - Setting Workflow](media/cv_codeResponses.PNG)
 
 If the Record Completion feature was purchased, you also have the ability to have two completion options: Name Completion and Address Completion.
 
 ![Aperture - Setting Workflow](media/cv_translation.PNG)
-![Aperture - Setting Workflow](media/cv_codeResponses.PNG)
+![Aperture - Setting Workflow](media/cv_humanResponses.PNG)
 
 ### Step 5
 Once you have finished configuring your workflow, you can click on "Show data" to see the results.
