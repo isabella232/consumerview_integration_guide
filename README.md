@@ -93,6 +93,10 @@ Once you have finished configuring your workflow, you can click on "Show data" t
 
 Data Studio will sometimes remove leading zeros for standardization. It is important to avoid this on the zip code/postal code column, as the API relies on a full zip code to make a match. To maintain leading zeros, go to Data Explorer and right click on the file. In the drop down menu, select "Preview and configure". Right click on the zip code/postal code column and select "Edit." In the pop up window, turn off all standardization options for that column by toggling each switch into the "Off" position.
 
+2. No More Clicks
+
+When you get this message in your table, that means you need to call EDQ to recieve a new token to buy more clicks. Either you have ran out or the table has more records than your remaining clicks.
+
 ## FAQs
 
 1. What columns to tag?
@@ -116,3 +120,5 @@ This Integration only works for USA data.
 The ConsumerView Step uses the Zip code and checks to see if it is a US formatted zipcode.
 
 4. Will the records process if I don't have the data tags?
+
+5. How to check my remaining transactions?
