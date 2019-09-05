@@ -19,15 +19,10 @@ things:
 For the purposes of this tutorial we will assume you have already installed and logged into Aperture Data Studio.
 
 ### Step 1
-You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.5.1\addons (the folder name Aperture Data Studio 1.5.1 should end in the version of Aperture Data Studio you are using).
+You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.5.1\addons (the folder name Aperture Data Studio 1.5.1 should end in the version of Aperture Data Studio you are using). Refresh the browser after.
 
 ### Step 2
-Restart the service by clicking on the user name in the top-right corner and select "Restart service."
-
-![Aperture - Restart Service](media/cv-restartService.PNG)
-
-### Step 3
-Once the service is running again, you will need to add the license key into the glossary.
+Next, you will need to add the license key into the glossary.
 After you’re logged in to Aperture Data Studio, on the home screen click on the Glossary.
 
 ![Aperture - Glossary](media/cv-glossary.PNG)
@@ -93,6 +88,10 @@ Once you have finished configuring your workflow, you can click on "Show data" t
 
 Data Studio will sometimes remove leading zeros for standardization. It is important to avoid this on the zip code/postal code column, as the API relies on a full zip code to make a match. To maintain leading zeros, go to Data Explorer and right click on the file. In the drop down menu, select "Preview and configure". Right click on the zip code/postal code column and select "Edit." In the pop up window, turn off all standardization options for that column by toggling each switch into the "Off" position.
 
+2. No More Clicks
+
+When you get this message in your table, that means you need to call EDQ to recieve a new token to buy more clicks. Either you have ran out or the table has more records than your remaining clicks.
+
 ## FAQs
 
 1. What columns to tag?
@@ -116,3 +115,9 @@ This Integration only works for USA data.
 The ConsumerView Step uses the Zip code and checks to see if it is a US formatted zipcode.
 
 4. Will the records process if I don't have the data tags?
+
+The table won't generate. It uses the datatags to find the information needed to get back data. 
+
+5. How to check my remaining transactions?
+
+There is a separate step that will allow you to view how many clicks are left.
