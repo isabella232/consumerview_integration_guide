@@ -11,36 +11,16 @@ things:
 
 * Aperture Data Studio
 * The .jar file for the step
-* Administrator access to the Glossary
 
 ## Installation instructions
 
 For the purposes of this tutorial we will assume you have already installed and logged into Aperture Data Studio.
 
 ### Step 1
-You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.5.1\addons (the folder name Aperture Data Studio 1.5.1 should end in the version of Aperture Data Studio you are using). Refresh the browser after.
+You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 2.0.14\addons (the folder name Aperture Data Studio 2.0.14 should end in the version of Aperture Data Studio you are using), if you cannot find it on the C drive look on the drive you had downloaded Aperture Data Studio . Restart the Aperture Data Studio Server service so that the add-on will be added.
 
 ### Step 2
-Next, you will need to add the license key into the glossary.
-After you’re logged in to Aperture Data Studio, on the home screen click on the Glossary.
-
-![Aperture - Glossary](media/cv-glossary.PNG)
-
-Once in the Glossary click on Constants.
-
-![Aperture - Selecting Constant](media/cv-constant.PNG)
-
-Create a new Constant Library and give it a name (ie ConsumerView).
-
-![Aperture - Constant Library](media/cv-constantLib.PNG)
-
-Create a Business Constant.
-
-![Aperture - Business Constant](media/cv-businessConstant.PNG)
-
-You will name the Business Constant EDQ_TOKEN, and the value will be the license key you got during the onboarding process from EDQ.
-
-![Aperture - Glossary Values](media/glossaryCV.PNG)
+Next, you will need to add the license key into the step setting for the Consumer View Step.
 
 ## Using The Consumer View Add-on Step
 
