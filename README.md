@@ -3,8 +3,7 @@ Written By Ashley Laing
 
 ## Overview
 
-Experian Data Quality is now introducing enrichment into Aperture Data Studio.
-Experian Marketing Services and EDQ have collaborated to integrate Consumer View Data into Aperture Data Studio.
+Experian Data Quality has updated the enrichment step, Consumer View, into Aperture Data Studio 2.0. Experian Marketing Services and EDQ have collaborated to integrate Consumer View Data into Aperture Data Studio.
 
 ## Installation prerequisites
 Before starting, it's important to make sure you have access to the following
