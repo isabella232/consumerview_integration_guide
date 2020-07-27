@@ -25,19 +25,19 @@ Next, you will need to add the license key into the step setting for the Consume
 ## Using The Consumer View Add-on Step
 
 ### Step 1
-
+Pick your datasource, view, or snapshot.
 
 ### Step 2
-
+Select the Consumer View Step from the Steps List. The step will select the tagged columns.
 
 ### Step 3
-
+Select the columns that are not tagged and the token for Consumer View in the step settings dropdown.
 
 ### Step 4
-
+Add a Take snapshot step from the steps list to the end for the information to be used in another workflow, depending on your solution. 
 
 ### Step 5
-
+Add any other steps from the Step List that you need to achieve your goal with the data.
 
 ## Troubleshooting
 
@@ -64,10 +64,6 @@ This Integration only works for USA data.
 
 The ConsumerView Step uses the Zip code and checks to see if it is a US formatted zipcode.
 
-4. Will the records process if I don't have the data tags?
-
-The table won't generate. It uses the datatags to find the information needed to get back data. 
-
-5. How to check my remaining transactions?
+4. How to check my remaining transactions?
 
 There is a separate step that will allow you to view how many clicks are left.
