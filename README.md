@@ -3,8 +3,7 @@ Written By Ashley Laing
 
 ## Overview
 
-Experian Data Quality is now introducing enrichment into Aperture Data Studio.
-Experian Marketing Services and EDQ have collaborated to integrate Consumer View Data into Aperture Data Studio.
+Experian Data Quality has updated the enrichment step, Consumer View, into Aperture Data Studio 2.0. Experian Marketing Services and EDQ have collaborated to integrate Consumer View Data into Aperture Data Studio.
 
 ## Installation prerequisites
 Before starting, it's important to make sure you have access to the following
@@ -12,85 +11,80 @@ things:
 
 * Aperture Data Studio
 * The .jar file for the step
-* Administrator access to the Glossary
 
 ## Installation instructions
 
 For the purposes of this tutorial we will assume you have already installed and logged into Aperture Data Studio.
 
 ### Step 1
-You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 1.5.1\addons (the folder name Aperture Data Studio 1.5.1 should end in the version of Aperture Data Studio you are using). Refresh the browser after.
+You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 2.0.14\addons (the folder name Aperture Data Studio 2.0.14 should end in the version of Aperture Data Studio you are using), if you cannot find it on the C drive look on the drive you had downloaded Aperture Data Studio . Restart the Aperture Data Studio Server service so that the add-on will be added.
 
 ### Step 2
-Next, you will need to add the license key into the glossary.
-After you’re logged in to Aperture Data Studio, on the home screen click on the Glossary.
-
-![Aperture - Glossary](media/cv-glossary.PNG)
-
-Once in the Glossary click on Constants.
-
-![Aperture - Selecting Constant](media/cv-constant.PNG)
-
-Create a new Constant Library and give it a name (ie ConsumerView).
-
-![Aperture - Constant Library](media/cv-constantLib.PNG)
-
-Create a Business Constant.
-
-![Aperture - Business Constant](media/cv-businessConstant.PNG)
-
-You will name the Business Constant EDQ_TOKEN, and the value will be the license key you got during the onboarding process from EDQ.
-
-![Aperture - Glossary Values](media/glossaryCV.PNG)
+Next, you will need to add the license key into the step setting for the Consumer View Step (Look at the Change the Token Section)
 
 ## Using The Consumer View Add-on Step
 
 ### Step 1
-When using the Consumer View Step, you must have your table data tagged.
-Instructions on how to data tag your tables is located in the [Aperture Data Studio User Guide](https://www.edq.com/documentation/aperture-data-studio/user-guide/#data-tagging).
+After you create your workflow:
 
-Once you tagged the table, the header should look like this header with word bubbles in the tagged headers:
+![Aperture - Consumer View Setting](media/create_workflow.png)
+![Aperture - Consumer View Setting](media/name_workflow.png)
+![Aperture - Consumer View Setting](media/name_workflow2.png)
 
-![Aperture - Table Tagged](media/cv-taggedHeader.PNG)
+Pick your datasource, view, or snapshot.
+
+![Aperture - Consumer View Setting](media/select_data.png)
 
 ### Step 2
-After data tagging the table, create your workflow in the Workflow Designer.
+Select the Consumer View Step from the Steps List. The step will select the tagged columns.
 
-![Aperture - Workflow Designer](media/cv-glossary.PNG)
-
-![Aperture - Create Workflow](media/cv-createWF.PNG)
+![Aperture - Consumer View Setting](media/consumerview_empty.png)
+![Aperture - Consumer View Setting](media/consumerview_dropdowns.png)
 
 ### Step 3
-Select your table and put together your workflow to meet your needs.
-The Consumer View step is called "Custom - Consumer View", it will be in the sidebar to the left.
+Select the columns that are not tagged and the token for Consumer View in the step settings dropdown.
 
-![Aperture - Selecting Table](media/cv_table.PNG)
+![Aperture - Consumer View Setting](media/select_token.png)
 
 ### Step 4
-For the Consumer View Step, you will see a checkbox that will control if the reponses get translated or stays in their orginal coded response.
+Add a Take snapshot step from the steps list to the end for the information to be used in another workflow, depending on your solution. 
 
-Leave the box unchecked and it will leave the responses in the orginal form.
-
-![Aperture - Setting Workflow](media/cv_noTranslation.PNG)
-![Aperture - Setting Workflow](media/cv_codeResponses.PNG)
-
-Check the box and the responses will be translated to values that make it clear of the meaning.
-
-![Aperture - Setting Workflow](media/cv_translation.PNG)
-![Aperture - Setting Workflow](media/cv_humanResponses.PNG)
+![Aperture - Consumer View Setting](media/add_snapshot.png)
 
 ### Step 5
-Once you have finished configuring your workflow, you can click on "Show data" to see the results.
+Add any other steps from the Step List that you need to achieve your goal with the data.
+
+## Changing the token
+
+### Step 1
+Go to Step Settings.
+![Aperture - Step Settings](media/step_settings_arrow.png)
+
+### Step 2
+Select the Consumer View Settings.
+![Aperture - Consumer View Setting](media/setting_setup_step2.png)
+
+### Step 3
+If you are putting in the token for the first time, then press Create new step settings.
+![Aperture - Consumer View Setting](media/setting_setup_step3a_arrow.png)
+
+Otherwise, click on the name of the token setting.
+![Aperture - Consumer View Setting](media/setting_setup_step3b.png)
+
+### Step 4
+Inputting a new token, fill out the Name and Token required fields.
+
+Otherwise, when changing the token to a new one, delete the old token in the Token field and put in the new token in that field.
+
+![Aperture - Consumer View Setting](media/stepsetting_fields.png)
+
+Press Apply.
+
+### Step 5
+When you run Consumer View Step again the token will change.
 
 ## Troubleshooting
 
-1. Leading Zero Missing
-
-Data Studio will sometimes remove leading zeros for standardization. It is important to avoid this on the zip code/postal code column, as the API relies on a full zip code to make a match. To maintain leading zeros, go to Data Explorer and right click on the file. In the drop down menu, select "Preview and configure". Right click on the zip code/postal code column and select "Edit." In the pop up window, turn off all standardization options for that column by toggling each switch into the "Off" position.
-
-2. No More Clicks
-
-When you get this message in your table, that means you need to call EDQ to recieve a new token to buy more clicks. Either you have ran out or the table has more records than your remaining clicks.
 
 ## FAQs
 
@@ -114,10 +108,6 @@ This Integration only works for USA data.
 
 The ConsumerView Step uses the Zip code and checks to see if it is a US formatted zipcode.
 
-4. Will the records process if I don't have the data tags?
-
-The table won't generate. It uses the datatags to find the information needed to get back data. 
-
-5. How to check my remaining transactions?
+4. How to check my remaining transactions?
 
 There is a separate step that will allow you to view how many clicks are left.
