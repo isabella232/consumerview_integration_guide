@@ -47,11 +47,17 @@ Go to Step Settings.
 
 ### Step 2
 Select the Consumer View Settings.
+![Aperture - Consumer View Setting](media/setting_setup_step2.png)
 
 ### Step 3
-Delete the old token in the Token field.
+If you are putting in the token for the first time, then press Create new step settings.
+![Aperture - Consumer View Setting](media/setting_setup_step3a_arrow.png)
+
+Otherwise, click on the name of the token setting.
+![Aperture - Consumer View Setting](media/setting_setup_step3b.png)
 
 ### Step 4
+Delete the old token in the Token field.
 Press Apply.
 
 ### Step 5
