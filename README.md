@@ -25,16 +25,31 @@ Next, you will need to add the license key into the step setting for the Consume
 ## Using The Consumer View Add-on Step
 
 ### Step 1
+After you create your workflow:
+
+![Aperture - Consumer View Setting](media/create_workflow.png)
+![Aperture - Consumer View Setting](media/name_workflow.png)
+![Aperture - Consumer View Setting](media/name_workflow2.png)
+
 Pick your datasource, view, or snapshot.
+
+![Aperture - Consumer View Setting](media/select_data.png)
 
 ### Step 2
 Select the Consumer View Step from the Steps List. The step will select the tagged columns.
 
+![Aperture - Consumer View Setting](media/consumerview_empty.png)
+![Aperture - Consumer View Setting](media/consumerview_dropdowns.png)
+
 ### Step 3
 Select the columns that are not tagged and the token for Consumer View in the step settings dropdown.
 
+![Aperture - Consumer View Setting](media/select_token.png)
+
 ### Step 4
 Add a Take snapshot step from the steps list to the end for the information to be used in another workflow, depending on your solution. 
+
+![Aperture - Consumer View Setting](media/add_snapshot.png)
 
 ### Step 5
 Add any other steps from the Step List that you need to achieve your goal with the data.
