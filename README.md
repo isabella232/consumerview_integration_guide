@@ -57,7 +57,12 @@ Otherwise, click on the name of the token setting.
 ![Aperture - Consumer View Setting](media/setting_setup_step3b.png)
 
 ### Step 4
-Delete the old token in the Token field.
+Inputting a new token, fill out the Name and Token required fields.
+
+Otherwise, when changing the token to a new one, delete the old token in the Token field and put in the new token in that field.
+
+![Aperture - Consumer View Setting](media/stepsetting_fields.png)
+
 Press Apply.
 
 ### Step 5
