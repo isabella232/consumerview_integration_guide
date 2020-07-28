@@ -39,6 +39,23 @@ Add a Take snapshot step from the steps list to the end for the information to b
 ### Step 5
 Add any other steps from the Step List that you need to achieve your goal with the data.
 
+## Changing the token
+
+### Step 1
+Go to Step Settings.
+
+### Step 2
+Select the Consumer View Settings.
+
+### Step 3
+Delete the old token in the Token field.
+
+### Step 4
+Press Apply.
+
+### Step 5
+When you run Consumer View Step again the token will change.
+
 ## Troubleshooting
 
 
