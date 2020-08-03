@@ -31,6 +31,35 @@ Place the jar into C:\Program Files\Experian\Aperture Data Studio 2.0.16\addons 
 ### Step 5
 Next, you will need to add the license key into the step setting for the Consumer View Step (Look at the Change the Token Section)
 
+## Installing/Changing the token
+
+### Step 1
+Go to Step Settings.
+![Aperture - Step Settings](media/step_settings_arrow.png)
+
+### Step 2
+Select the Consumer View Settings.
+![Aperture - Consumer View Setting](media/setting_setup_step2.png)
+
+### Step 3
+If you are putting in the token for the first time, then press Create new step settings.
+![Aperture - Consumer View Setting](media/setting_setup_step3a_arrow.png)
+
+Otherwise, click on the name of the token setting.
+![Aperture - Consumer View Setting](media/setting_setup_step3b.png)
+
+### Step 4
+Inputting a new token, fill out the Name and Token required fields.
+
+Otherwise, when changing the token to a new one, delete the old token in the Token field and put in the new token in that field.
+
+![Aperture - Consumer View Setting](media/stepsetting_fields.png)
+
+Press Apply.
+
+### Step 5
+When you run Consumer View Step again the token will change.
+
 ## Using The Consumer View Add-on Step
 
 ### Step 1
@@ -63,37 +92,9 @@ Add a Take snapshot step from the steps list to the end for the information to b
 ### Step 5
 Add any other steps from the Step List that you need to achieve your goal with the data.
 
-## Changing the token
-
-### Step 1
-Go to Step Settings.
-![Aperture - Step Settings](media/step_settings_arrow.png)
-
-### Step 2
-Select the Consumer View Settings.
-![Aperture - Consumer View Setting](media/setting_setup_step2.png)
-
-### Step 3
-If you are putting in the token for the first time, then press Create new step settings.
-![Aperture - Consumer View Setting](media/setting_setup_step3a_arrow.png)
-
-Otherwise, click on the name of the token setting.
-![Aperture - Consumer View Setting](media/setting_setup_step3b.png)
-
-### Step 4
-Inputting a new token, fill out the Name and Token required fields.
-
-Otherwise, when changing the token to a new one, delete the old token in the Token field and put in the new token in that field.
-
-![Aperture - Consumer View Setting](media/stepsetting_fields.png)
-
-Press Apply.
-
-### Step 5
-When you run Consumer View Step again the token will change.
-
 ## Troubleshooting
 
+* If the consumer view step won't connect to the source or workflow step before, it still has read it. All you need to do is get out the draft view and go back in for the connection link to show.
 
 ## FAQs
 
