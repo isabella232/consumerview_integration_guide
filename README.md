@@ -20,7 +20,7 @@ For the purposes of this tutorial we will assume you have already installed and 
 You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ.
 
 ### Step 2
-Stop the Experian Aperture Data Studio Database Server 2.0.16 64bit (or what ever version of Aperture Data STudio you have)
+Stop the Experian Aperture Data Studio Database Server 2.0.16 64bit (or what ever version of Aperture Data Studio you have)
 
 ### Step 3
 Place the jar into C:\Program Files\Experian\Aperture Data Studio 2.0.16\addons (the folder name Aperture Data Studio 2.0.16 should end in the version of Aperture Data Studio you are using), if you cannot find it on the C drive look on the drive you had downloaded Aperture Data Studio.
