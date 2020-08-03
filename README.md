@@ -17,9 +17,18 @@ things:
 For the purposes of this tutorial we will assume you have already installed and logged into Aperture Data Studio.
 
 ### Step 1
-You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ, and drop it into C:\Program Files\Experian\Aperture Data Studio 2.0.14\addons (the folder name Aperture Data Studio 2.0.14 should end in the version of Aperture Data Studio you are using), if you cannot find it on the C drive look on the drive you had downloaded Aperture Data Studio . Restart the Aperture Data Studio Server service so that the add-on will be added.
+You will need the jar file for the Consumer View Add-on Step. Download the jar that is given to you by EDQ.
 
 ### Step 2
+Stop the Experian Aperture Data Studio Database Server 2.0.16 64bit (or what ever version of Aperture Data STudio you have)
+
+### Step 3
+Place the jar into C:\Program Files\Experian\Aperture Data Studio 2.0.16\addons (the folder name Aperture Data Studio 2.0.16 should end in the version of Aperture Data Studio you are using), if you cannot find it on the C drive look on the drive you had downloaded Aperture Data Studio.
+
+### Step 4
+ Restart the Aperture Data Studio Server service so that the add-on will be added.
+
+### Step 5
 Next, you will need to add the license key into the step setting for the Consumer View Step (Look at the Change the Token Section)
 
 ## Using The Consumer View Add-on Step
